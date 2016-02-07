@@ -1,0 +1,20 @@
+@media screen and (max-width: 639px) {
+  .top-bar-left {
+    display: none;
+  }
+}
+
+.title-bar {
+  background: none;
+  color: #444;
+
+  .menu-icon::after {
+    // color: #444;
+    background: #444;
+    box-shadow: 0 7px 0 #444,0 14px 0 #444;
+  }
+}
+
+.top-bar, .top-bar ul {
+  background: none;
+}
