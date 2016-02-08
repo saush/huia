@@ -1,12 +1,117 @@
+$primary-clr: #F44336;
+
 @font-face {
-    font-family: 'robotocondensed_light';
-    src: url('RobotoCondensed-Light-webfont.eot');
-    src: url('RobotoCondensed-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('RobotoCondensed-Light-webfont.woff') format('woff'),
-         url('RobotoCondensed-Light-webfont.ttf') format('truetype'),
-         url('RobotoCondensed-Light-webfont.svg#robotothin_italic') format('svg');
+    font-family: 'roboto_Thin';
+    src: url('../fonts/Roboto-Thin-webfont.eot');
+    src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Thin-webfont.svg#roboto_Thin') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'roboto_regular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-REgular-webfont.svg#roboto_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background: #ffffff;
+  color: #444;
+  font-family: "roboto_regular";
+}
+
+::selection {
+  background: $primary-clr;
+  color: #fff;
+}
+::-moz-selection {
+  background: $primary-clr;
+  color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "roboto_Thin", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Times New Roman", sans-serif;
+  color: #222;
+  // font-weight: 100;
+}
+
+a {
+  color: $primary-clr;
+  transition: all 0.35s;
+  &:hover, &:focus {
+    color: $primary-clr;
+  }
+}
+
+// .menu > li >a {
+//   text-transform: uppercase;
+//   font-size: 0.875rem;
+//   font-family: "roboto_Thin";
+//   font-weight: bold;
+// }
+
+.menu > li > a {
+  color: #777;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.875rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: $primary-clr;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  .active {
+
+    &:before {
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.button {
+  &.primary.hollow {
+    border:1px solid $primary-clr;
+    color: $primary-clr;
+  }
+  &.primary,&.secondary {
+    padding: 1rem 2.2rem;
+
+    &:hover, &:focus {
+      background: $primary-clr;
+      color: #fff !important;
+      border-color: $primary-clr !important;
+    }
+  }
+  &.round {
+    border-radius: 50px;
+  }
 }
 
 @media screen and (max-width: 639px) {
@@ -28,4 +133,35 @@
 
 .top-bar, .top-bar ul {
   background: none;
+}
+
+header {
+  text-align: center;
+  padding: 50px 30px;
+
+  hr {
+    max-width: 50px;
+  }
+
+  #banner {
+    p {
+      // padding: 0px 150px 0;
+      margin: 48px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 639px) {
+  header {
+    padding: 100px 0;
+
+    #banner {
+      max-width: 960px;
+      margin: 0 auto;
+      p {
+        padding: 0px 150px 0;
+        margin: 48px 0;
+      }
+    }
+  }
 }
