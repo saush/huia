@@ -43,10 +43,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-  color: $primary-clr;
-  transition: all 0.35s;
+  color: #000;
+  border-bottom: 1px dotted #000;
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+
+  // font-size: 106%;
   &:hover, &:focus {
     color: $primary-clr;
+    border-bottom: transparent;
   }
 }
 
@@ -68,6 +75,7 @@ a {
   position: relative;
   overflow: hidden;
   font-size: 0.875rem;
+  border-bottom: none;
 
   &:before {
     content: "";
