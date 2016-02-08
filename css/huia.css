@@ -1,9 +1,78 @@
 @font-face {
-  font-family: 'robotocondensed_light';
-  src: url("RobotoCondensed-Light-webfont.eot");
-  src: url("RobotoCondensed-Light-webfont.eot?#iefix") format("embedded-opentype"), url("RobotoCondensed-Light-webfont.woff") format("woff"), url("RobotoCondensed-Light-webfont.ttf") format("truetype"), url("RobotoCondensed-Light-webfont.svg#robotothin_italic") format("svg");
+  font-family: 'roboto_Thin';
+  src: url("../fonts/Roboto-Thin-webfont.eot");
+  src: url("../fonts/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Thin-webfont.woff") format("woff"), url("../fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("../fonts/Roboto-Thin-webfont.svg#roboto_Thin") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'roboto_regular';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-REgular-webfont.svg#roboto_regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background: #ffffff;
+  color: #444;
+  font-family: "roboto_regular"; }
+
+::selection {
+  background: #F44336;
+  color: #fff; }
+
+::-moz-selection {
+  background: #F44336;
+  color: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "roboto_Thin", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Times New Roman", sans-serif;
+  color: #222; }
+
+a {
+  color: #F44336;
+  transition: all 0.35s; }
+  a:hover, a:focus {
+    color: #F44336; }
+
+.menu > li > a {
+  color: #777;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.875rem; }
+  .menu > li > a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #F44336;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out; }
+  .menu > li > a:hover:before, .menu > li > a:focus:before, .menu > li > a:active:before,
+  .menu > li > a .active:before {
+    left: 0;
+    right: 0; }
+
+.button.primary.hollow {
+  border: 1px solid #F44336;
+  color: #F44336; }
+.button.primary, .button.secondary {
+  padding: 1rem 2.2rem; }
+  .button.primary:hover, .button.primary:focus, .button.secondary:hover, .button.secondary:focus {
+    background: #F44336;
+    color: #fff !important;
+    border-color: #F44336 !important; }
+.button.round {
+  border-radius: 50px; }
+
 @media screen and (max-width: 639px) {
   .top-bar-left {
     display: none; } }
@@ -16,5 +85,23 @@
 
 .top-bar, .top-bar ul {
   background: none; }
+
+header {
+  text-align: center;
+  padding: 50px 30px; }
+  header hr {
+    max-width: 50px; }
+  header #banner p {
+    margin: 48px 0; }
+
+@media screen and (min-width: 639px) {
+  header {
+    padding: 100px 0; }
+    header #banner {
+      max-width: 960px;
+      margin: 0 auto; }
+      header #banner p {
+        padding: 0px 150px 0;
+        margin: 48px 0; } }
 
 /*# sourceMappingURL=huia.css.map */
