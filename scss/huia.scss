@@ -23,7 +23,7 @@ $primary-clr: #F44336;
 
 body {
   background: #ffffff;
-  color: #444;
+  color: #777;
   font-family: "roboto_regular";
 }
 
@@ -38,7 +38,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "roboto_Thin", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Times New Roman", sans-serif;
-  color: #222;
+  color: #000;
   // font-weight: 100;
 }
 
@@ -176,4 +176,22 @@ header {
 
 #services {
   padding: 150px 0;
+}
+
+.fa {
+    color: $primary_clr;
+}
+
+.service {
+    margin: 100px 0;
+    text-align: center;
+
+    p {
+        max-width: 18rem;
+        margin: 0 auto;
+    }
+}
+
+.service-title {
+    margin: 20px 0;
 }
