@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
         <link rel="stylesheet" href="css/huia.css">
 
         <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -20,13 +22,178 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
- 
+<!--         <ul class="menu vertical" data-responsive-menu="drilldown">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> -->
+
+        <nav class="wow fadeIn" data-wow-delay=".2s">
+            <div class="title-bar" data-responsive-toggle="menu-bar" data-hide-for="medium">
+              <h3 class="title-bar-title">Huia</h3>
+              <button class="menu-icon float-right" type="button" data-toggle></button>
+            </div>
+
+            <div class="top-bar" id="menu-bar" data-toggler data-animate="slide-in-up slide-out-up">
+              <div class="top-bar-left">
+                <h5 style="font-weight:900">Huia</h5>
+              </div>
+              <div class="top-bar-right">
+                <ul class="menu vertical medium-horizontal">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <header id="#about" class="wow fadeIn">
+            <div class="row">
+                <div id="banner" class="">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod</h1>
+                    <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+                    <a href="" class="button primary hollow round">GET STARTED</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="services" class="row text-center">
+          <div>
+            <h2 class="wow fadeIn" data-wow-delay=".2s">Services</h2>
+            <div class="row">
+                <div class="column small-12 medium-12 large-4 service wow fadeIn" data-wow-delay=".2s">
+                    <i class="fa fa-home fa-2x"></i>	
+                    <h4 class="service-title">Lorem ipsum dolor sit</h4>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incident ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="column small-12 medium-12 large-4 service wow fadeIn" data-wow-delay=".3s">
+                    <i class="fa fa-list fa-2x"></i>	
+                    <h4 class="service-title">Lorem ipsum dolor sit</h4>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incident ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="column small-12 medium-12 large-4 service wow fadeIn" data-wow-delay=".4s">
+                    <i class="fa fa-copy fa-2x"></i>
+                    <h4 class="service-title">Lorem ipsum dolor sit</h4>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incident ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column small-12 medium-12 large-4 service wow fadeIn" data-wow-delay=".1s">
+                    <i class="fa fa-bars fa-2x"></i>	
+                    <h4 class="service-title">Lorem ipsum dolor sit</h4>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incident ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="column small-12 medium-12 large-4 service wow fadeIn" data-wow-delay=".2s">
+                    <i class="fa fa-anchor fa-2x"></i>	
+                    <h4 class="service-title">Lorem ipsum dolor sit</h4>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incident ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="column small-12 medium-12 large-4 service wow fadeIn" data-wow-delay=".3s">
+                    <i class="fa fa-cloud fa-2x"></i>
+                    <h4 class="service-title">Lorem ipsum dolor sit</h4>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incident ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="portfolio" class="portfolio text-center">
+            <h2 class="wow fadeIn" data-wow-delay=".1s">Portfolio</h2>
+            <div class="row">
+                <div class="folio-item column small-12 medium-4 large-4 wow fadeIn" data-wow-delay=".1s">
+                    <a href="#" class="folio-item-container">
+                        <img src="img/1.jpg" />
+                        <div class="folio-caption">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="folio-item column small-12 medium-4 large-4 wow fadeIn" data-wow-delay=".2s">
+                    <a href="#" class="folio-item-container">
+                        <img src="img/2.jpg" />
+                        <div class="folio-caption">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="folio-item column small-12 medium-4 large-4 wow fadeIn" data-wow-delay=".3s">
+                    <a href="#"  class="folio-item-container">
+                        <img src="img/3.jpg" />
+                        <div class="folio-caption">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="folio-item column small-12 medium-4 large-4 wow fadeIn" data-wow-delay=".4s">
+                    <a href="#" class="folio-item-container">
+                        <img src="img/4.jpg" />
+                        <div class="folio-caption">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="folio-item column small-12 medium-4 large-4 wow fadeIn" data-wow-delay=".5s">
+                    <a href="#" class="folio-item-container">
+                        <img src="img/5.jpg" />
+                        <div class="folio-caption">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="folio-item column small-12 medium-4 large-4 wow fadeIn" data-wow-delay=".6s">
+                    <a href="#"  class="folio-item-container">
+                        <img src="img/6.jpg" />
+                        <div class="folio-caption">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact text-center">
+            <div class="row">
+                <div class="column small-12 wow fadeIn" data-wow-delay=".1s">
+                    <h2>Contact</h2>
+                    <div><i class="fa fa-phone"></i>+11-1234567890</div> 
+                    <div><i class="fa fa-envelope"></i>john@johndoe.com</div>
+                    <hr/>
+                    <div class="contact-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text-center">
+            <div class="row wow fadeIn" data-wow-delay=".2s">
+                <div class="column small-12 medium-6">
+                    &copy; 2016, John Doe
+                </div>
+                <div class="column small-12 medium-6">
+                    All rights reserved - John Doe
+                </div>
+            </div>
+        </footer>
+
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/foundation.min.js"></script>
+        <script src="js/wow.min.js"></script>
         <script src="js/huia.js"></script>
     </body>
 </html>
