@@ -6,7 +6,7 @@
 ## Getting Started
 
 To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Saushmedia](http://huia.saushmedia.in/)
+* [Download the latest release on Saushmedia](http://saushmedia.in/)
 * Clone the repo: `git clone https://github.com/saush/huia.git`
 * Fork the repo
 
