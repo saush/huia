@@ -164,4 +164,29 @@ header {
   .folio-item-container:hover .folio-caption, .folio-item-container:focus .folio-caption, .folio-item-container:active .folio-caption {
     opacity: 1; }
 
+.contact {
+  background: #333;
+  color: #fff;
+  padding-bottom: 100px; }
+  .contact h2 {
+    margin: 100px 0 50px 0;
+    color: #fff; }
+  .contact .fa {
+    color: #fff;
+    margin-right: 10px; }
+  .contact hr {
+    max-width: 2rem; }
+
+.contact-social a {
+  border-bottom: none;
+  font-size: 1.5rem;
+  transition: all 0.4s;
+  display: inline-block;
+  padding: 5px 5px; }
+  .contact-social a:hover .fa, .contact-social a:focus .fa, .contact-social a:active .fa {
+    color: #F44336;
+    transition: all 0.4s; }
+.contact-social .fa {
+  transition: all 0.4s; }
+
 /*# sourceMappingURL=huia.css.map */
