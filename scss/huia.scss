@@ -250,3 +250,45 @@ header {
         }
     }
 }
+
+.contact {
+    background: #333;
+    color: #fff;
+    padding-bottom: 100px;
+
+    h2 {
+        margin: 100px 0 50px 0;
+        color: #fff;
+    }
+
+    .fa {
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    hr {
+        max-width: 2rem;
+    }
+}
+
+.contact-social {
+    a {
+        border-bottom: none;
+        font-size: 1.5rem;
+        transition: all 0.4s;
+        display: inline-block;
+        padding: 5px 5px;
+
+        &:hover, &:focus, &:active {
+            .fa {
+                color: $primary-clr;
+                transition: all 0.4s;
+            }
+
+        }
+    }
+
+    .fa {
+        transition: all 0.4s;
+    }
+}
