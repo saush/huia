@@ -165,7 +165,7 @@ header {
     opacity: 1; }
 
 .contact {
-  background: #333;
+  background: #222;
   color: #fff;
   padding-bottom: 100px; }
   .contact h2 {
@@ -188,5 +188,11 @@ header {
     transition: all 0.4s; }
 .contact-social .fa {
   transition: all 0.4s; }
+
+.footer {
+  background: #111;
+  border-top: 1px solid #2c2c2c;
+  padding: 15px 0;
+  color: #fff; }
 
 /*# sourceMappingURL=huia.css.map */
