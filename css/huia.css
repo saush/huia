@@ -69,7 +69,8 @@ a {
 
 .button.primary.hollow {
   border: 1px solid #F44336;
-  color: #F44336; }
+  color: #F44336;
+  margin-right: 20px; }
 .button.primary, .button.secondary {
   padding: 1rem 2.2rem; }
   .button.primary:hover, .button.primary:focus, .button.secondary:hover, .button.secondary:focus {
