@@ -1,12 +1,12 @@
-# [Huia](http://huia.saushmedia.in/)
+# [Huia](http://saush.github.io/huia)
 
-[Huia](http://huia.saushmedia.in/) is a beautiful one page clean and minimal creative theme for [Foundation](http://foundation.zurb.com/) created by **[Saurabh Sharma](http://saush.in/)**.
+[Huia](http://saush.github.io/huia) is a beautiful one page clean and minimal creative theme for [Foundation](http://foundation.zurb.com/) created by **[Saurabh Sharma](http://saush.in/)**.
 
 
 ## Getting Started
 
 To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Saushmedia](http://saushmedia.in/)
+* [Download the latest release](http://saush.github.io/huia)
 * Clone the repo: `git clone https://github.com/saush/huia.git`
 * Fork the repo
 
